@@ -1,5 +1,5 @@
 # Klicky-Changer
-A toolchanger for Voron 2.4 and alike, what uses Klicky Probe as Z probe. Its based on the tree pins design from DraftShift Design (StealthChanger https://github.com/DraftShift/StealthChanger ) and uses a modified version of Viesturz's klipper-toolchanger add-on ( https://github.com/viesturz/klipper-toolchanger ) and modified Klicky-Probe configs ( https://github.com/jlas1/Klicky-Probe ).
+A toolchanger for Voron 2.4 and alike, what uses Klicky Probe as Z probe. Its based on the tree pins design from DraftShift Design (StealthChanger https://github.com/DraftShift/StealthChanger ) and uses Viesturz's klipper-toolchanger add-on ( https://github.com/viesturz/klipper-toolchanger ) and modified Klicky-Probe configs ( https://github.com/jlas1/Klicky-Probe ).
 
 Thanks to the above mentioned sources for my inspiration, without their work my days would be much empty.
 
