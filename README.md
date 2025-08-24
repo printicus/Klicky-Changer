@@ -1,5 +1,7 @@
 # Klicky-Changer
 
+[![Test Print](https://img.youtube.com/vi/o_eyPX9v53s/0.jpg)](https://www.youtube.com/watch?v=o_eyPX9v53s)
+
 Klicky-Changer is a toolchanger hardware addon for Voron 2.4 and other similar setups, what uses Klicky Probe(or PCB Klicky) as Z probe. Its based on the three pin shuttle and backplate interlocking design from [DraftShift Design](https://github.com/DraftShift/StealthChanger) and uses [Viesturz's](https://github.com/viesturz/klipper-toolchanger) klipper-toolchanger software and modified [Klicky-Probe]( https://github.com/jlas1/Klicky-Probe ) configs.
 
 Thanks to the above mentioned sources for my inspiration, without their work my days would be much empty.
