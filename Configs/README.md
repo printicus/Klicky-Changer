@@ -35,7 +35,7 @@ The printer must have klipper and all configs instaled, and functioning as a pri
 
 SSH into your printer(refer to your Mainboard docs for how to do this) and run the installation script for the Klipper-Toolchanger plugin using the following command:
 ```
-wget -O - https://raw.githubusercontent.com/printicus/klipper-toolchanger/main/install.sh | bash
+wget -O - https://raw.githubusercontent.com/printicus/Klipper-Toolchanger-for-Klicky-Changer/main/install.sh | bash
 ```
 This script will download the Klipper-Toolchanger plugin to your RaspberryPi home directory, and symlink the files in the Klipper extra folder.
 
@@ -115,3 +115,4 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
