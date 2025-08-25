@@ -5,7 +5,9 @@
 ## Here you can find the designs for the Klicky-Changer hardware parts.
 
 There is a shuttle for using with classic Klicky-Probe and a shuttle for using with PCB Klicky.
-The PCB (from the PCK Klicky kit)that has the JST connector must be modified. Because of space constraints the connector must pe removed(just the plastic part), the pins shortened and the wires that come from the pogopins will be soldered direct on the pins(see pictures)
+The PCB (from the PCK Klicky kit)that has the JST connector must be modified. Because of space constraints the connector must pe removed(just the plastic part), the pins shortened and the wires that come from the pogopins will be soldered direct on the pins(see picture)
+
+<img src="../Hardware/Images/Shuttle PCB Klicky 05.jpg" width="350" >
 
 After some testing I decidet to go with magnets ment to be screwed on, rather than forced into the printed parts. Printed parts tend to loosen over time and the magnets are puled out after repeated use. Glue does not do much.
 I gave the option to use double the magnets between the shuttle and backplate. You can choose if you use two pairs or four pairs, depending on what strengt magnets you have.
@@ -15,6 +17,8 @@ The electrical connection between shuttle and backplate is done with pogopins. T
 ## Pin Detection
 
 For that I use 4 of the 8 pogopins contacts. On the shuttle side solder 4 pogopins together. On the backplate side the corespondent pogopins are soldered 2 and 2. I do this so I will double the contacts uset for tool detection. I dont want after 10 hours printing to get a bad contact and scrap the print. Because I dont use filament detection, the pins for that I use for tool detection. You can use whatever free pins you have on your toolboard.
+
+<img src="../Hardware/Images/Shuttle Pogopins Wireing Example.jpg" width="350" >
 
 ## Bom for one shuttle:
 
@@ -53,7 +57,7 @@ From the PCB-Klicky github you will need to print the probe.
 
 ## Recomendet tools
 
-One set of alen keys, Philips small screw-drivers, box cutter, Drill bits starting at 1mm, Side Cutters, pliers, ruler, caliper, etc
+One set of allen keys, Philips small screw-drivers, box cutter, Drill bits starting at 1mm, Side Cutters, pliers, ruler, calipers, etc
 
 Drill Bits Sets: https://vi.aliexpress.com/item/1005004411348630.html
 You will need to make shure the holes for the M1.5 and M2 selftapping screws are the rigt size, or parts will break. For the M1.5 screw I use the 1mm drill bit to redrill the hole and for the M2 I use the 1.5mm drill bit.
@@ -61,5 +65,6 @@ You will need to make shure the holes for the M1.5 and M2 selftapping screws are
 ## Printing
 
 I use primarely SuperSlicer. My designs are made to take advantage of the "Vertical Hole shrinking compensation" setting in that slicer, that lets me tune vertical hole size without altering other dimensions. So if you will slice my files with other slicers, the vertical holes will come out smaller. The holes ment for self tapping screws are the most problematic in this situation. Maybe you will need to redrill them to fit screws trough. I includet a file for tuning the hole size, if you want to use it.
+
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
