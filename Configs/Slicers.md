@@ -1,8 +1,10 @@
-## This is how I have configured my slicers
+# This is how I have configured my slicers
 
-# I use SuperSlicer and Prusa Slicer. My instructions are for these two slicers.
+## I use SuperSlicer and Prusa Slicer. My instructions are for these two slicers.
 
-My primary Print_Start is in the slicer. Its easier when I want to change something whitout doing a "firmware restart" on the printer.
+I will, eventually, get the instructions on how to use with Orca Slicer allso
+
+My primary Print_Start is in the slicer.
 
 ## - For Super Slicer:
 
@@ -83,3 +85,4 @@ M106 S{min_fan_speed[current_extruder] *2.55}
 
 
 This will start preheating your next tool acording to what layer it will be printing. If you have in your slicer different temps for first layer and the other layers it will preheat accordingly. It will also stop the PCF for the toolchange, so it will not interfere with the temp stabilization, and will start the PCF only at the layer that you have it set in the Filament Settings tab, under Cooling, and at the speed you have it set.
+
