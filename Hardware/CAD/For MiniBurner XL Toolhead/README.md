@@ -9,7 +9,7 @@ You can find Miniburner XL Toolhead [HERE](https://github.com/printicus/For-Voro
 - M2x10 x4 Countersunk Selftapping Screws for magnets
 - M3 Hammerhead T-nuts x2
 - M3x8 x4
-- Silicon for the [silicon pad](/Silicon%Pad%Mold.md)
+- Silicon for the [silicon pad](../Silicon%Pad%Mold.md)
 - 50x10x0.4 spring steel for the silicon pad.
 
 ## BOM for Backplate
@@ -31,5 +31,6 @@ You can find Miniburner XL Toolhead [HERE](https://github.com/printicus/For-Voro
 Shuttle and Backplate should be printed in the same XY orientation. No mather how good your printer is, there would allways be a size diference between the same dimension on X and Y.
 
 ## For the Shuttle and Backplate - The design gave you the option for 4 pairs of magnets, but you should only use them all if your magnets are weak. No need to use 4 pairs of magnets. For normal use two magnets on the shuttle, one on each side, and two on the backplate are enough.
+
 
 
