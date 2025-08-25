@@ -9,7 +9,7 @@ You can find Miniburner XL Toolhead [HERE](https://github.com/printicus/For-Voro
 - M2x10 x4 Countersunk Selftapping Screws for magnets
 - M3 Hammerhead T-nuts x2
 - M3x8 x4
-- Silicon for the [silicon pad](../Silicon%Pad%Mold.md)
+- Silicon for the silicon pad
 - 50x10x0.4 spring steel for the silicon pad.
 
 ## BOM for Backplate
@@ -32,5 +32,13 @@ Shuttle and Backplate should be printed in the same XY orientation. No mather ho
 
 ## For the Shuttle and Backplate - The design gave you the option for 4 pairs of magnets, but you should only use them all if your magnets are weak. No need to use 4 pairs of magnets. For normal use two magnets on the shuttle, one on each side, and two on the backplate are enough.
 
+## Using the silicon mold for Miniburner XL toolchanger dock.
+
+[![Silicon Mold](https://img.youtube.com/vi/6CMpIc2Bso8/0.jpg)](https://www.youtube.com/watch?v=6CMpIc2Bso8)
+
+Silicon I used: - https://www.amazon.de/dp/B01MZ7EO1V?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+
+
+Its a very high temp resisting silicon. No release agent needed. It does not stick to annything, and can easy be removed. One or two holes drilled in the springsteel strip before molding it in the pad for the dock, will help.
 
 
