@@ -4,7 +4,7 @@
 
 ## KNOWN LIMITATION(AND DANGER):
 
-- Because of how Klicky-Probe software works, the first move when homing after starting the printer, or after the stepper motors disengaging, is by going up by the value of "safe_z", found in the **/Klicky-Probe/klicky-variables.cfg** . This will happen once if you use G28(or "home all" buton on your printer web interface), or it will happen twice if you use G28 XY and G28 Z one after annother. So if it happens that the gantry is stoppend and the stepper motors are disengaged close to your printer max Z hight for some reason( just started the printer, finished print, some errors by docking and undocking, or any other reasons ) do not home the printer or you run the risk of going over your Z hight limit and breack something. Please manualy move the toolhead to the center of your x-y axis and carrefully( after making shure no printed parts are on the printer bed ) use the "UNSAFE_LOWER_GANTRY" macro to lower the gantry to a safer hight. The macro will move the gantry down 20mm. So use it to move the gantry to about the half of your printer Z hight, and then home the printer. Dont use the macro if the toolhead is at bed level, it will crash the toolhead and the shuttle in the bed.
+- Because of how Klicky-Probe software works, the first move when homing after starting the printer, or after the stepper motors disengaging, is by going up by the value of "safe_z", found in the **/Klicky-Probe/klicky-variables.cfg** . This will happen once if you use G28(or "home all" buton on your printer web interface), or it will happen twice if you use G28 XY and G28 Z one after annother. So if it happens that the gantry is stoppend and the stepper motors are disengaged close to your printer max Z hight for some reason( just started the printer, finished print, some errors by docking and undocking, or any other reasons ) do not home the printer or you run the risk of going over your Z hight limit and break something. Please manualy move the toolhead to the center of your x-y axis and carrefully( after making shure no printed parts are on the printer bed ) use the "UNSAFE_LOWER_GANTRY" macro to lower the gantry to a safer hight. The macro will move the gantry down 20mm. So use it to move the gantry to about the half of your printer Z hight, and then home the printer. Dont use the macro if the toolhead is at bed level, it will crash the toolhead and the shuttle in the bed.
 
 - Homing must be in X-Y-Z sequence. Homing Y-X-Z can lead to colision whit the Klicky-Probe Dock or the magnets from the shuttle can drag the Klicky-Probe down from dock and lead to errors and/or crashes.
 
@@ -47,7 +47,7 @@ This script will download the Klipper-Toolchanger plugin to your RaspberryPi hom
 
 You will need to change the pins in each toolhead configs for the pins of the toolboard atached to it, and ad toolheads configs for all your toolheads. I only posted two as an example.
 
-You will need to set Klicky-Probe dock position: https://github.com/jlas1/Klicky-Probe/tree/main/Printers/Voron/v1.8_v2.4_Legacy_Trident#step-6-klipper--dockundock-configuration
+You will need to set [Klicky-Probe dock position](https://github.com/jlas1/Klicky-Probe/tree/main/Printers/Voron/v1.8_v2.4_Legacy_Trident#step-6-klipper--dockundock-configuration)
 
 ## Setting T0 Probe Z-Offset(the paper sheet method):
 
@@ -115,4 +115,5 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
