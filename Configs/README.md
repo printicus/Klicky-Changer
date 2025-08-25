@@ -93,6 +93,7 @@ Usually, when all toolheads and docks are the same model, the Y and Z "docked po
 You must, as with T0, do a one layer print test with each toolhead to fine tune that first layer. The new value shown in the web interface z-offset position must replace the value in that toolhead gcode z-offset setting.
 The gcode z-offset value adjusting in the toolheads configs must be done manually, not with the "save config" command.
 
+## [Slicers](../Configs/Slicers.md)
 
 ## Setting the toolheads(T1, T2, etc) g-code X and Y offsets.
 
@@ -115,5 +116,6 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
