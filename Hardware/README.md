@@ -10,7 +10,9 @@ The PCB (from the PCK Klicky kit)that has the JST connector must be modified. Be
 <img src="../Hardware/Images/Shuttle PCB Klicky 05.jpg" width="350" >
 
 After some testing I decidet to go with magnets ment to be screwed on, rather than forced into the printed parts. Printed parts tend to loosen over time and the magnets are puled out after repeated use. Glue does not do much.
+
 I gave the option to use double the magnets between the shuttle and backplate. You can choose if you use two pairs or four pairs, depending on what strengt magnets you have.
+
 The electrical connection between shuttle and backplate is done with pogopins. This is for wireing the Z-probe connection, x-endstop(if you will use it) and for pin detection.
 
 
@@ -24,12 +26,12 @@ For that I use 4 of the 8 pogopins contacts. On the shuttle side solder 4 pogopi
 
 - Filament: ABS or ASA(or similar heat resistant filament)
 - Endstop switch D2F-L x2 (when used for x endstop the lever stays on, when used for Klicky-Probe the lever must be removed)
-- Magnets: 6x3x2mm magnets x7. This does not include the magnets on the probe itself.
-- M2x10 x7 Countersunk Self Tapping Screws for magnets
-- Pogopins with 8 contacts. They are sold in pairs. On the shuttle will be used the fixed ones.
-- M1.5x4 x2 Self Tapping Screws for the pogopins.
+- Magnets: 6x3x2mm magnets  x7. This does not include the magnets on the probe itself.
+- M2x10  x7 Countersunk Self Tapping Screws for magnets
+- Pogopins with 8 contacts. They are sold in pairs. On the shuttle will be used the non springy ones.
+- M1.5x4  x2 Self Tapping Screws for the pogopins.
 - Thin wires. I've measured them as 0.6mm.
-- 4x6x6 Bushings x3 (Cheap items, buy more than you need and try them out until you find a set that works the best....)
+- 4x6x6 Bushings  x3 (Cheap items, buy more than you need and try them out until you find a set that works the best....)
 
 ## Bom for probes: BOM can be found on theyr respective Github.
 
@@ -68,3 +70,4 @@ I use primarely SuperSlicer. My designs are made to take advantage of the "Verti
 
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
+
