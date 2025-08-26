@@ -1,0 +1,3 @@
+The printer bed position should be as in front of the printer as possible. It makes it easy to ad accessorie in the back of the printer bed(nozzle scrubbers, klicky-probe dock, nozzle probes, etc).
+
+For this you will home your printer, then move your toolhead to Y0. Make a mark on the XY joints printed parts and on the correspondent gantry extrusion, disengage the stepper motors, manualy move the gantry forward untill it touches the front idlers and measure thr distance between the mark on the XY joints printed parts and the mark on the gantry extrusion.
