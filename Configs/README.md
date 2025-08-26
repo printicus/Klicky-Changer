@@ -20,6 +20,8 @@
 - It uses pin detecton for knowing what tool is mounted.
 - If you have the posibility for homing with every toolhead(if you have sensorless setup, or microswitches for x and y) you can home and start a print with whatever toolhead is on the shuttle. No need to make shure T0 is on the shuttle to home and start printing.
 
+  [My X-endstop solution](../Configs/The%20X-Endstop.md)
+
 
 ## This is how I have configured my printer.
 
@@ -118,6 +120,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
