@@ -1,6 +1,6 @@
 # Klicky-Changer
 
-Short demo print featuring [Miniburner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner%20XL%20Toolhead)
+Short demo print featuring [Miniburner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner_XL_Toolhead)
 
 [![Test Print](https://img.youtube.com/vi/o_eyPX9v53s/0.jpg)](https://www.youtube.com/watch?v=o_eyPX9v53s)
 
