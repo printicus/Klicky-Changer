@@ -23,7 +23,7 @@
 ## This is how I have configured my printer.
 
 - This is a configuration for "Z-Probe on all tools and fixet docks", with the tool docks on a aluminium profile placed on the front of the printer(or in a door buffer, if you have one). If you want liftbar you must configure that youself, im not familiar with that.
-- This configuration steps are for using Klicky-Changer with [MiniBurner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner%20XL%20Toolhead). Klicky-Changer can be used with other toolheads to(no limitation there), but be carefull. The main difference will be dock configuration, and you will need to adapt the backplate to your desired toolhead. For that you will need to refer to the specific toolhead you want to use.
+- This configuration steps are for using Klicky-Changer with [MiniBurner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner%20XL%20Toolhead). Klicky-Changer can be used with other toolheads to(no limitation there), but be carefull. The main difference will be dock configuration, and you will need to adapt the backplate to your desired toolhead(or ask me to do it...). For that you will need to refer to the specific toolhead you want to use.
 - First do the Klicky-Changer configuration as it is. If you decide to do changes in files and/or configs other than what is mentioned in this guide, you may get errors... I run my printer with this configs for a long time now and i got no errors or crashes.
 - Homing is handled by Klicky-Probe homing_overide macro. You can find it in **/Klicky-Probe/klicky-macros.cfg**. As it is now, its set for homing with regular microswitches for X and Y. If you want to use sensorless homing you will need to ad macros for that. The macros must be named "_HOME_X" for sensorless X, and "_HOME_Y" for sensorless Y. Allso you must do the rest of the sensorless homing configuration in your printer.cfg.
 - After every file modification do a "firmware restart". Until the configuration is finished allways home with T0.
@@ -116,6 +116,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
