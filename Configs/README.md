@@ -4,11 +4,12 @@
 
 ## KNOWN LIMITATION(AND DANGER):
 
-- Because of how Klicky-Probe software works, the first move when homing after starting the printer, or after the stepper motors disengaging, is by going up by the value of "safe_z", found in the **/Klicky-Probe/klicky-variables.cfg** . This will happen once if you use G28(or "home all" buton on your printer web interface), or it will happen twice if you use G28 XY and G28 Z one after annother. So if it happens that the gantry is stoppend and the stepper motors are disengaged close to your printer max Z hight for some reason( just started the printer, finished print, some errors by docking and undocking, or any other reasons ) do not home the printer or you run the risk of going over your Z hight limit and break something. Please manualy move the toolhead to the center of your x-y axis and carrefully( after making shure no printed parts are on the printer bed ) use the "UNSAFE_LOWER_GANTRY" macro to lower the gantry to a safer hight. The macro will move the gantry down 20mm. So use it to move the gantry to about the half of your printer Z hight, and then home the printer. Dont use the macro if the toolhead is at bed level, it will crash the toolhead and the shuttle in the bed.
+- Because of how Klicky-Probe software works, the first move when homing after starting the printer, or after the stepper motors disengaging, is by going up by the value of "safe_z", found in the **/Klicky-Probe/klicky-variables.cfg** . This will happen once if you use G28(or "home all" buton on your printer web interface), or it will happen twice if you use G28 XY and G28 Z one after annother. So if it happens that the gantry is stoppend and the stepper motors are disengaged close to your printer max Z hight for some reason( just started the printer, finished print, some errors by docking and undocking, or any other reasons ) do not home the printer or you'll run the risk of going over your Z hight limit and break something. Please manualy move the toolhead to the center of your x-y axis and carrefully( after making shure no printed parts are on the printer bed ) use the "UNSAFE_LOWER_GANTRY" macro to lower the gantry to a safer hight. The macro will move the gantry down 20mm. So use it to move the gantry to about the half of your printer Z hight, and then home the printer. Dont use the macro if the toolhead is at bed level, it will crash the toolhead and the shuttle in the bed.
 
 - Homing must be in X-Y-Z sequence. Homing Y-X-Z can lead to colision whit the Klicky-Probe Dock or the magnets from the shuttle can drag the Klicky-Probe down from dock and lead to errors and/or crashes.
 
 - The bed mesh "mesh_min" Y distance should not be smaller than the probe Y offset value ( [tool_probe T(n)] - "y_offset" ). A value of 25 for the "mesh_min" Y will be ok.
+
 - The QGL Y back probe points ("points:") should not be bigger than your Y max bed size minus the probe Y offset value ( [tool_probe T(n)] - "y_offset" ). A value of (your bed Y size minus 40) will be ok.
 
 
@@ -17,21 +18,22 @@
 - Its a Toolchanger. You can have as manny toolheads your printer can fit, and use them for multicolor and multimaterial printing.
 - It uses Klicky-Probe as a Z-Probe for homing, bed meshing and QGL.
 - It uses pin detecton for knowing what tool is mounted.
-- If you have the posibility for homing with every toolhead(if you have sensorless setup, or microswitches for x and y) you can home and start a print with whatever toolhead is on the shuttle. No need to make shure T0 is on the shuttle to start printing.
+- If you have the posibility for homing with every toolhead(if you have sensorless setup, or microswitches for x and y) you can home and start a print with whatever toolhead is on the shuttle. No need to make shure T0 is on the shuttle to home and start printing.
 
 
 ## This is how I have configured my printer.
 
 - This is a configuration for "Z-Probe on all tools and fixet docks", with the tool docks on a aluminium profile placed on the front of the printer(or in a door buffer, if you have one). If you want liftbar you must configure that youself, im not familiar with that.
-- This configuration steps are for using Klicky-Changer with [MiniBurner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner%20XL%20Toolhead). Klicky-Changer can be used with other toolheads to(no limitation there), but be carefull. The main difference will be dock configuration, and you will need to adapt the backplate to your desired toolhead(or ask me to do it...). For that you will need to refer to the specific toolhead you want to use.
+- This configuration steps are for using Klicky-Changer with [MiniBurner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner_XL_Toolhead). Klicky-Changer can be used with other toolheads to(no limitation there). The main difference will be dock configuration, and you will need to adapt the backplate to your desired toolhead(or ask me to do it...). For that you will need to refer to the specific toolhead you want to use.
 - First do the Klicky-Changer configuration as it is. If you decide to do changes in files and/or configs other than what is mentioned in this guide, you may get errors... I run my printer with this configs for a long time now and i got no errors or crashes.
-- Homing is handled by Klicky-Probe homing_overide macro. You can find it in **/Klicky-Probe/klicky-macros.cfg**. As it is now, its set for homing with regular microswitches for X and Y. If you want to use sensorless homing you will need to ad macros for that. The macros must be named "_HOME_X" for sensorless X, and "_HOME_Y" for sensorless Y. Allso you must do the rest of the sensorless homing configuration in your printer.cfg.
+- Homing is handled by Klicky-Probe homing_overide macro. You can find it in **/Klicky-Probe/klicky-macros.cfg**. As it is now, its set for homing with regular microswitches for X and Y. If you want to use sensorless homing you will need to ad macros for that. The macros must be named "_HOME_X" for sensorless X, and "_HOME_Y" for sensorless Y. Allso you must do the rest of the sensorless homing configuration on your hardware and in your printer.cfg.
+- [Bed Position]()
 - After every file modification do a "firmware restart". Until the configuration is finished allways home with T0.
 
 First, please, do a back-up of your configs.
 Have the hardware part sorted out(wireing, shuttle, backplates with toolheads, toolheads docks, klicky-probe dock...)
 
-The printer must have klipper and all configs instaled, and functioning as a printer(for best results I recomand a fresh klipper install). For that refer to your Mainboard documentation and your printer manual. If you already have Klicky-Probe(or PCB-Klicky) hardware installed(the probe dock) it will make this setup easier. Delete all klicky-probe files and configs from your printer config folder, Klicky-Changer comes with its own configs for Klicky-Probe. Allso no Kamp or other pluggins for whatever function you have installed. Those can be addet after Klicky-Changer is fully functional, if you still need them.
+The printer must have klipper and all configs instaled, and functioning as a printer(for best results I recomand a fresh klipper install). For that refer to your Mainboard documentation and your printer manual. If you already have Klicky-Probe(or PCB-Klicky) hardware installed(the probe dock) it will make this setup easier. Delete all klicky-probe files and configs from your printer config folder, Klicky-Changer comes with its own configs for Klicky-Probe. Allso no Kamp or other pluggins for whatever function you have installed. Those can be addet after Klicky-Changer is fully functional, if you still need them. Klicky-Changer comes with tool priming macro includet(N3MI's Prime_Lines macro).
 
 SSH into your printer(refer to your Mainboard docs for how to do this) and run the installation script for the Klipper-Toolchanger plugin using the following command:
 ```
@@ -116,6 +118,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
