@@ -47,11 +47,11 @@ This script will download the Klipper-Toolchanger plugin to your RaspberryPi hom
 
 You will need to change the pins in each toolhead configs for the pins of the toolboard atached to it, and ad toolheads configs for all your toolheads. I only posted two as an example.
 
-You will need to set [Klicky-Probe dock position](https://github.com/jlas1/Klicky-Probe/tree/main/Printers/Voron/v1.8_v2.4_Legacy_Trident#step-6-klipper--dockundock-configuration)
+You will need to set [Klicky-Probe dock position](https://github.com/jlas1/Klicky-Probe/tree/main/Printers/Voron/v1.8_v2.4_Legacy_Trident#step-6-klipper--dockundock-configuration) and all the relevant setting for your setup(bed size, etc) in **/Klicky-Probe/klicky-variables.cfg**
 
 ## Setting T0 Probe Z-Offset(the paper sheet method):
 
-- You will need to ad in each tool config the probe Y offset ( [tool_probe T(n)] - "y_offset" ). The value for both shuttles(for Klicky-Probe and PCB-Klicky) is 22.45.
+- You will need to ad in each tool config the probe Y offset ( [tool_probe T(n)] - "y_offset" ). The value for both shuttles(for Klicky-Probe and PCB-Klicky) is **22.45**.
 
 - G28 - QGL - G28(or use the G32 macro includet, it does the same thing, but with fewer probe docking and undocking)
 - Make shure the probe is not atachet to the toolhead.
@@ -116,6 +116,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
