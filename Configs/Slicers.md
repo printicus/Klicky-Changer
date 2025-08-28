@@ -2,9 +2,7 @@
 
 ## I use SuperSlicer and Prusa Slicer. My instructions are for these two slicers.
 
-I will, eventually, get the instructions on how to use with Orca Slicer allso
-
-My primary Print_Start is in the slicer.
+## **My primary Print_Start is in the slicer.**
 
 ## - For Super Slicer:
 
@@ -120,3 +118,4 @@ G90
 ```
 
 This will stop the PCF for the toolchange, so it will not interfere with the temp stabilization, generate a toolchange command and after the toolchange will move the tool to the correct Z for the respective layer. That ```-5``` shoud reflect the amount of Z move done by the toolchange, according to the tool config tool call macro
+
