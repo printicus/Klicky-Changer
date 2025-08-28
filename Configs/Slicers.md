@@ -86,3 +86,37 @@ M106 S{min_fan_speed[current_extruder] *2.55}
 
 This will start preheating your next tool acording to what layer it will be printing. If you have in your slicer different temps for first layer and the other layers it will preheat accordingly. It will also stop the PCF for the toolchange, so it will not interfere with the temp stabilization, and will start the PCF only at the layer that you have it set in the Filament Settings tab, under Cooling, and at the speed you have it set.
 
+
+## - For Orca Slicer:
+
+In the Printer Setting tab, under Machine G-code:
+ - In the "Machine startG-code" window I have:
+
+```
+BED_MESH_CLEAR
+G28 x y
+Attach_Probe_Lock
+G28 z
+G90
+G0 X30 Y30 Z100 F20000            ; move nozzle away from bed
+M190 S[first_layer_bed_temperature] ; wait for bed temp to stabilize
+QUAD_GANTRY_LEVEL
+G28
+BED_MESH_CLEAR
+BED_MESH_CALIBRATE ADAPTIVE=1
+Dock_Probe_Unlock
+G0 X30 Y30 Z100 F20000         ; move nozzle away from bed
+PRINT_START TOOL_TEMP={first_layer_temperature[initial_tool]} {if is_extruder_used[0]}T0_TEMP={first_layer_temperature[0]}{endif} {if is_extruder_used[1]}T1_TEMP={first_layer_temperature[1]}{endif} {if is_extruder_used[2]}T2_TEMP={first_layer_temperature[2]}{endif} {if is_extruder_used[3]}T3_TEMP={first_layer_temperature[3]}{endif} {if is_extruder_used[4]}T4_TEMP={first_layer_temperature[4]}{endif} {if is_extruder_used[5]}T5_TEMP={first_layer_temperature[5]}{endif}  BED_TEMP=[first_layer_bed_temperature] TOOL=[initial_tool]
+```
+
+- In the "Change filament G-code" window I have:
+
+```
+M106 S0
+T[next_extruder]
+G91
+G0 Z{-5+layer_height}
+G90
+```
+
+This will stop the PCF for the toolchange, so it will not interfere with the temp stabilization, generate a toolchange command and after the toolchange will move the tool to the correct Z for the respective layer. That ```-5``` shoud reflect the amount of Z move done by the toolchange, according to the tool config tool call macro
