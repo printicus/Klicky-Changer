@@ -44,7 +44,11 @@ From the PCB-Klicky github you will need to print the probe.
 
 - Endstop switch: https://vi.aliexpress.com/item/1005005222652017.html
 
-- Bushings: https://vi.aliexpress.com/item/1005005335880614.html or https://vi.aliexpress.com/item/1005007954250796.html or https://vi.aliexpress.com/item/1005005924778460.html
+- Bushings: https://vi.aliexpress.com/item/1005005335880614.html
+
+    or https://vi.aliexpress.com/item/1005007954250796.html
+  
+    or https://vi.aliexpress.com/item/1005005924778460.html
 
 - Pogopins I used:  https://vi.aliexpress.com/item/1005006125313623.html  the model I used is "8P with ear 2.54mm". Buy 1-2 pairs extra, maybe, over time the backplate side ones may get bad... not happened to me yet, but nothing is perfect.
 
@@ -70,5 +74,6 @@ I use primarely SuperSlicer. My designs are made to take advantage of the "Verti
 
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
+
 
 
