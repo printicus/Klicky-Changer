@@ -24,7 +24,7 @@ For that I use 4 of the 8 pogopins contacts. On the shuttle side solder 4 pogopi
 
 ## Bom for one shuttle:
 
-- Filament: ABS or ASA(or similar heat resistant filament)
+- Filament: ABS or ASA
 - Endstop switch D2F-L x2 (when used for x endstop the lever stays on, when used for Klicky-Probe the lever must be removed)
 - Magnets: 6x3x2mm magnets  x7. This does not include the magnets on the probe itself.
 - M2x10  x7 Countersunk Self Tapping Screws for magnets
@@ -70,4 +70,5 @@ I use primarely SuperSlicer. My designs are made to take advantage of the "Verti
 
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
+
 
