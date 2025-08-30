@@ -5,8 +5,9 @@ For this you will home your printer, then move your toolhead to Y0. Make a mark 
 
 <img src="../Hardware/Images/Bed Position 01.jpg" width="500">  <img src="../Hardware/Images/Bed Position 02.jpg" width="500">
 
-That distance measured minus 1mm(you dont want the gantry to slam in the front idlers when going Y0) must be added to the value found in printer.cfg in your Y motor config as "position_endstop:" and "position_max:". Al other accessories you allready have configured and depend on Y position must have the Y position corected in their config.
+That distance measured minus 1mm(you dont want the gantry to slam in the front idlers when going Y0) must be added to the value found in printer.cfg in your Y motor config as "position_endstop:" and "position_max:". All other accessories you allready have configured and depend on Y position must have the Y position corected in their config.
 
 After an "firmware_restart" home the printer, move the toolhead to Y0 and move the bed so that the edge of the bed to coincide with the tip off the nozzle.
+
 
 
