@@ -20,7 +20,7 @@ The electrical connection between shuttle and backplate is done with pogopins. T
 
 For that I use 4 of the 8 pogopins contacts. On the shuttle side solder 4 pogopins together. On the backplate side the corespondent pogopins are soldered 2 and 2. I do this so I will double the contacts uset for tool detection. I dont want after 10 hours printing to get a bad contact and scrap the print. Because I dont use filament detection, the pins for that I use for tool detection. You can use whatever free pins you have on your toolboard.
 
-<img src="../Hardware/Images/Shuttle Pogopins Wireing Example.jpg" width="350" >
+<img src="../Hardware/Images/Pogopins Wireing Example - Shuttle.jpg" width="350" >  <img src="../Hardware/Images/Pogopins Wireing Example - Backplate.jpg" width="350" >
 
 ## Bom for one shuttle:
 
@@ -74,6 +74,7 @@ I use primarely SuperSlicer. My designs are made to take advantage of the "Verti
 
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
+
 
 
 
