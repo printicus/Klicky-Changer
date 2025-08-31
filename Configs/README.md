@@ -10,7 +10,7 @@
 
 - The bed mesh "mesh_min" Y distance value should not be smaller than the probe Y offset value ( [tool_probe T(n)] - "y_offset" ). A value of 25 for the "mesh_min" Y will be ok.
 
-- The QGL Y back probe points value ("points:") should not be bigger than your Y max bed size minus the probe Y offset value ( [tool_probe T(n)] - "y_offset" ). A value of (your bed Y size minus 40) will be ok.
+- The QGL Y back probe points value ("points:") should not be bigger than your Y max bed size minus the probe Y offset value ( [tool_probe T(n)] - "y_offset" ). A value of (your bed Y size) minus 40 will be ok.
 
 
 ## Klicky-Changer's functions:
@@ -120,6 +120,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
