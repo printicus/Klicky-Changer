@@ -11,7 +11,7 @@ The PCB (from the PCK Klicky kit)that has the JST connector must be modified. Be
 
 After some testing I decidet to go with magnets ment to be screwed on, rather than forced into the printed parts. Printed parts tend to loosen over time and the magnets are puled out after repeated use. Glue does not do much.
 
-I gave the option to use double the magnets between the shuttle and backplate. You can choose if you use two pairs or four pairs, depending on what strengt magnets you have.
+I gave the option to use double the magnets between the shuttle and backplate. You can choose if you use two pairs or four pairs, depending on what strengt magnets you have. In a normal case, just two magnets on the shuttle, one on each side, and two magnets on the backplate is enough.
 
 The electrical connection between shuttle and backplate is done with pogopins. This is for wireing the Z-probe connection, x-endstop(if you will use it) and for pin detection.
 
@@ -74,6 +74,7 @@ I use primarely SuperSlicer. My designs are made to take advantage of the "Verti
 
 
 4 walls, 5 tops, 5 bottoms. 40-50% infill. Only pink color allowed.... :D
+
 
 
 
