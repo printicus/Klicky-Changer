@@ -73,7 +73,7 @@ If you will need to again fine tune the T0 z-offset and it will be a different v
 
 ## Setting dock position
 
-## Definition: "docked position" is the toolhead position fully seated on the dock, waiting to be picked-up.
+## Definition: "docked position" is the toolhead position on the shuttle, inserted in the dock in the correct x an y position, with the toolhead magnets close to the dock magnets, but not touching.
 
 After setting T0 Z-offset, and with T0 on the shuttle:
 1. G28 - QGL - G28(or use the G32 macro includet, it does the same thing, but with fewer probe docking and undocking)
@@ -120,6 +120,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
