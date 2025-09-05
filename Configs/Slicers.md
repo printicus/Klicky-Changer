@@ -1,10 +1,11 @@
 # This is how I have configured my slicers
 
-## I use SuperSlicer and Prusa Slicer. My instructions are for these two slicers.
 
 ## **My primary Print_Start is in the slicer.**
 
 ## - For Super Slicer:
+
+In your "Filament Settings" tab, in "Multimaterial" settings you must have enabled "ramming for multitool setups". This will make restore your tool after a toolchange on the wipe tower and not the printed part. 
 
 In the Printer Setting tab, under Custom G-code:
  - In the "StartG-code" window I have:
@@ -45,6 +46,8 @@ This will start preheating your next tool acording to what layer it will be prin
 
 
 ## - For Prusa Slicer:
+
+In your "Filament Settings" tab, in "Advanced" settings you must have enabled "ramming for multitool setups". This will make restore your tool after a toolchange on the wipe tower and not the printed part.
 
 In the Printer Setting tab, under Custom G-code:
  - In the "StartG-code" window I have:
@@ -87,6 +90,8 @@ This will start preheating your next tool acording to what layer it will be prin
 
 ## - For Orca Slicer:
 
+In your "Printer/Multimaterial" tab the "Enable filament ramming" option must be enabled. In your filament profiles settings "Multimaterial" tab, the option "Enable ramming for multi-tool setups" must be enabled. This will make restore your tool after a toolchange on the wipe tower and not the printed part.
+
 In the Printer Setting tab, under Machine G-code:
  - In the "Machine startG-code" window I have:
 
@@ -112,10 +117,8 @@ PRINT_START TOOL_TEMP={first_layer_temperature[initial_tool]} {if is_extruder_us
 ```
 M106 S0
 T[next_extruder]
-G91
-G0 Z{-5+layer_height}
-G90
 ```
 
-This will stop the PCF for the toolchange, so it will not interfere with the temp stabilization, generate a toolchange command and after the toolchange will move the tool to the correct Z for the respective layer. That ```-5``` shoud reflect the amount of Z move done by the toolchange, according to the tool config tool call macro
+This will stop the PCF for the toolchange, so it will not interfere with the temp stabilization, and generate a toolchange command. The slicer does start the fan after the toolchange.
+
 
