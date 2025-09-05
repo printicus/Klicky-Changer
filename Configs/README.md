@@ -49,7 +49,7 @@ This script will download the Klipper-Toolchanger plugin to your RaspberryPi hom
 - Delete, or comment out, the [probe] section from your printer.cfg file. Each toolhead config file will have its own probe section.
 - Reboot your printer
 
-You will need to change the pins in each toolhead configs for the pins of the toolboard atached to it, and ad toolheads configs for all your toolheads. I only posted two as an example.
+You will need to set the pins in each toolhead configs for the pins of the toolboard atached to it, and ad toolheads configs for all your toolheads. I only posted two as an example.
 
 You will need to set [Klicky-Probe dock position](https://github.com/jlas1/Klicky-Probe/tree/main/Printers/Voron/v1.8_v2.4_Legacy_Trident#step-6-klipper--dockundock-configuration) and all the relevant setting for your setup(bed size, etc) in **/Klicky-Probe/klicky-variables.cfg**
 
@@ -120,6 +120,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
