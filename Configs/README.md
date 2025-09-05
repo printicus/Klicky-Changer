@@ -37,17 +37,7 @@ Have the hardware part sorted out(wireing, shuttle, backplates with toolheads, t
 
 The printer must have klipper and all configs instaled, and functioning as a printer(for best results I recomand a fresh klipper install). For that refer to your Mainboard documentation and your printer manual. If you already have Klicky-Probe(or PCB-Klicky) hardware installed(the probe dock) it will make this setup easier. Delete all klicky-probe files and configs from your printer config folder, Klicky-Changer comes with its own configs for Klicky-Probe. Allso no Kamp or other pluggins for whatever function you have installed. Those can be addet after Klicky-Changer is fully functional, if you still need them. Klicky-Changer comes with tool priming macro includet(N3MI's Prime_Lines macro).
 
-SSH into your printer(refer to your Mainboard docs for how to do this) and run the installation script for the Klipper-Toolchanger plugin using the following command:
-```
-wget -O - https://raw.githubusercontent.com/printicus/Klipper-Toolchanger-for-Klicky-Changer/main/install.sh | bash
-```
-This script will download the Klipper-Toolchanger plugin to your RaspberryPi home directory, and symlink the files in the Klipper extra folder.
-
-- Copy "Klicky-Probe", "Klipper-Toolchanger" and "Toolheads" folders from this repo to your printer config folder.
-- Copy "My_MACROS.cfg" and "prime_lines.cfg" to your printer config folder.
-- Ad the lines from this "printer.cfg" to your "printer.cfg". Use these macros to replace your printer.cfg macros.
-- Delete, or comment out, the [probe] section from your printer.cfg file. Each toolhead config file will have its own probe section.
-- Reboot your printer
+## [Installing](../Configs/Installing.md)
 
 You will need to set the pins in each toolhead configs for the pins of the toolboard atached to it, and ad toolheads configs for all your toolheads. I only posted two as an example.
 
@@ -120,6 +110,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
