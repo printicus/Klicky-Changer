@@ -1,9 +1,11 @@
-# Klicky-Changer 
+/# Klicky-Changer 
 ### (fully functional, thing are still being added, modified...)
  
 Short demo print featuring [Miniburner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner_XL_Toolhead)
 
 [![Test Print](https://img.youtube.com/vi/o_eyPX9v53s/0.jpg)](https://www.youtube.com/watch?v=o_eyPX9v53s)
+
+[DISCORD CHANNEL](https://discord.gg/PGrTdSWV)
 
 Klicky-Changer is a toolchanger hardware addon for Voron 2.4 and other similar setups, what uses Klicky Probe(or PCB Klicky) as Z probe. Its based on the three pin shuttle and backplate interlocking design from [DraftShift Design](https://github.com/DraftShift/StealthChanger) and uses [Viesturz's](https://github.com/viesturz/klipper-toolchanger) klipper-toolchanger software and modified [Klicky-Probe]( https://github.com/jlas1/Klicky-Probe ) configs.
 
