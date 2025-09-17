@@ -21,9 +21,3 @@ origin: https://github.com/printicus/Klipper-Toolchanger-for-Klicky-Changer.git
 managed_services: klipper
 primary_branch: main
 ```
-
-If an update has new klipper files, they will not be automatically installed into Klipper. You will need to run the intall script manualy to add them:
-
-```
-bash ~/klipper-toolchanger/install.sh
-```
