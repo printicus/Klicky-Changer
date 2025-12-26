@@ -95,7 +95,7 @@ The X and Y gcode offsets are needet so that all nozzles after T0(T1, T2, etc) a
 
 Guides on how to do that can be found in the links bellow. 
 
-I use a [nozzle camera](https://github.com/printicus/For-Voron-Printers/tree/main/OV9726%20Nozzle%20Camera) and "axiscope" to do that. https://github.com/nic335/Axiscope
+I use a [nozzle camera](https://github.com/printicus/For-Voron-Printers/tree/main/OV9726%20Nozzle%20Camera) and [Axiscope](https://github.com/nic335/Axiscope) to do that.
 
 But there are allot of other methods:
 
@@ -110,6 +110,7 @@ kTAMV - https://github.com/TypQxQ/kTAMV
 
 
 In theory, thats it. Your setup my need some adjustments over time, but its ready to print. Good Luck.
+
 
 
 
