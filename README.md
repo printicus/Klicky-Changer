@@ -1,6 +1,5 @@
 # Klicky-Changer 
 
-### Not up to date with the last klipper, working on this
 ### (fully functional, thing are still being added, modified...)
  
 Short demo print featuring [Miniburner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner_XL_Toolhead).
