@@ -1,5 +1,16 @@
 # Klicky-Changer 
 
+Dont go past Klipper v0.13.0-669. For this use the folowing:
+
+```
+sudo service klipper stop
+cd ~/klipper
+git checkout fb57d59ce0aeebfe63d0f7c5d716ee9119faf029
+sudo service klipper start
+```
+After that, if you have a klipper warning, do a "soft reset" not "hard reset", or you will need to reinstall all other addons.
+
+
 ### (fully functional, thing are still being added, modified...)
  
 Short demo print featuring [Miniburner XL Toolhead](https://github.com/printicus/For-Voron-Printers/tree/main/MiniBurner_XL_Toolhead).
