@@ -1,6 +1,6 @@
 # Klicky-Changer 
 
-Dont go past Klipper v0.13.0-669. For this use the folowing:
+If you use original KTC from V's github dont go past Klipper v0.13.0-669. For this use the folowing:
 
 ```
 sudo service klipper stop
